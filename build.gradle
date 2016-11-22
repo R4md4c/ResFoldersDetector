@@ -4,11 +4,11 @@ buildscript {
         mavenCentral()
         jcenter()
         maven {
-            url 'https://mymavenrepo.com/repo/3uLioUMX33e2ixlQWd3n/'
+            url "https://plugins.gradle.org/m2/"
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
-        classpath 'com.github.r4md4c.gradle:res-folders-detector-plugin:0.1-SNAPSHOT'
+        classpath "com.gradle.publish:plugin-publish-plugin:0.9.6"
     }
 }

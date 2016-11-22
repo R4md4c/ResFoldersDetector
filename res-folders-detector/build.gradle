@@ -2,7 +2,7 @@ apply plugin: 'groovy'
 apply plugin: 'maven'
 
 ext.group = 'com.github.r4md4c.gradle'
-ext.pluginVersion = '0.1-SNAPSHOT'
+ext.pluginVersion = '0.1'
 
 apply from: '../maven.gradle'
 

@@ -1,46 +1,19 @@
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "com.gradle.publish:plugin-publish-plugin:0.9.6"
-    }
-}
-
-
 apply plugin: 'com.gradle.plugin-publish'
 
 group = ext.group
 version = ext.pluginVersion
 
-publishing {
-    repositories {
-        maven {
-            url "https://mymavenrepo.com/repo/AXS9Q3yD5x5zETogWrMy/"
-        }
-
-        publications {
-            maven(MavenPublication) {
-                artifactId = 'res-folders-detector-plugin'
-                from components.java
-            }
-        }
-    }
-}
-
 // The configuration example below shows the minimum required properties
 // configured to publish your plugin to the plugin portal
 pluginBundle {
-    website = 'http://www.gradle.org/'
-    vcsUrl = 'https://github.com/gradle/gradle'
-    description = 'Greetings from here!'
-    tags = ['res', 'android']
+    website = 'https://github.com/R4md4c/ResFoldersDetector'
+    vcsUrl = 'https://github.com/R4md4c/ResFoldersDetector.git'
+    description = 'An Android Gradle plugin that detects added res folders and add it to the res source set'
+    tags = ['android-resources', 'Android']
 
     plugins {
         greetingsPlugin {
-            id = 'res-folders-detector-plugin'
+            id = 'com.github.r4md4c.gradle.res-folders-detector-plugin'
             displayName = 'Res Folders Detector'
         }
     }
