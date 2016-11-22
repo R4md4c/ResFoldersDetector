@@ -1,0 +1,3 @@
+rootProject.name = 'ResExtensionPlugin'
+include ':res-folders-detector', ':sample'
+

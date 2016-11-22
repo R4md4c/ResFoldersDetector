@@ -1,0 +1,14 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://mymavenrepo.com/repo/3uLioUMX33e2ixlQWd3n/'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.github.r4md4c.gradle:res-folders-detector-plugin:0.1-SNAPSHOT'
+    }
+}
